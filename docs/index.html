@@ -1,13 +1,22 @@
+<!DOCTYPE html>
 <html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <head>
-  <script>
-  function title() {
-    window.webkit.messageHandlers.title.postMessage("Bridge WKWebView Demo");
-  }
+  <script type="text/javascript" src="./js/script.js">
   </script>
+  <title>JavaScript テスト</title>
 </head>
 <body>
   <p>Hello world in docs</p>
-  <button type="button" onclick="title()"><big>Title</big></button>
+  <form name="test">
+    <input type="button" value="タイトル" onClick="callWKWebviewWithTitle()"></br></br>
+    <input type="button" value="イメージURL" onClick="callWKWebviewWithImageUrl()"></br></br>
+    <input type="button" value="ステータスバースタイルDefault" onClick="callWKWebviewWithStatusBarStyleDefault()"></br></br>
+    <input type="button" value="ステータスバースタイルLight" onClick="callWKWebviewWithStatusBarStyleLight()"></br></br>
+    <input type="button" value="ステータスバーShow" onClick="callWKWebviewWithStatusBarShow()"></br></br>
+    <input type="button" value="ステータスバーHide" onClick="callWKWebviewWithStatusBarHide()"></br></br>
+  </form>
 </body>
 </html>
