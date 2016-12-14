@@ -1,10 +1,13 @@
 <html>
 <head>
   <script>
-    webkit.messageHandlers.callbackHandler.postMessage(myjson);
+  function title() {
+    window.webkit.messageHandlers.title.postMessage("Bridge WKWebView Demo");
+  }
   </script>
 </head>
 <body>
   <p>Hello world in docs</p>
+  <button type="button" onclick="title()"><big>Title</big></button>
 </body>
 </html>
